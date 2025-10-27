@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote | MR cleaner</title>
+    <meta name="description" content="Contact MR cleaner for a free, no-obligation quote for your business in Belgrade. Reach us by phone, email, or our contact form.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+    <div class="container">
+        <a href="index.html" class="brand-logo">MR cleaner</a>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Request a Quote</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p class="subtitle">We're ready to help. Fill out the form for a free quote or contact us directly.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container contact-layout">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2>Request a Quote</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service of Interest</label>
+                        <select id="service" name="service">
+                            <option value="general">General Inquiry</option>
+                            <option value="deep-cleaning">Deep Cleaning of Facilities</option>
+                            <option value="large-surface">Large Surface Cleaning</option>
+                            <option value="custom">Custom Plan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your cleaning needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit-btn">Send Request</button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-info-container">
+                <h2>Contact Information</h2>
+                <p>We are based in Vračar and serve the entire Belgrade area.</p>
+                <ul class="contact-details">
+                    <li><strong>Contact Person:</strong> Zoran Stojanović</li>
+                    <li><strong>Phone:</strong> <a href="tel:+381605101288">+381 60 5 10 12 88</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:glavni@mrcleanervracar.com">glavni@mrcleanervracar.com</a></li>
+                    <li><strong>Working Hours:</strong> Mon - Fri: 08:00 - 17:00</li>
+                </ul>
+                <div class="map-placeholder">
+                    <p>Map of Belgrade Showing Vračar Area</p>
+                    <img src="https://via.placeholder.com/400x300.png?text=Belgrade+Map+Placeholder" alt="Map placeholder">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <p>&copy; <span id="current-year"></span> MR cleaner. All Rights Reserved. | B2B Cleaning Services in Belgrade, Serbia.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
