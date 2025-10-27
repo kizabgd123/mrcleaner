@@ -1,89 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR cleaner | Professional B2B Cleaning Services in Belgrade</title>
+    <meta name="description" content="MR cleaner offers professional deep cleaning and large surface cleaning services for businesses in Belgrade. Trustworthy, reliable, and efficient.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.4.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="brand-logo">MR cleaner</a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Request a Quote</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: linear-gradient(rgba(0, 44, 78, 0.7), rgba(0, 44, 78, 0.7)), url('https://source.unsplash.com/random/1600x900/?clean-office');">
+            <div class="container hero-content">
+                <h1>Professional Cleaning for Belgrade Businesses</h1>
+                <p class="subtitle">Reliable, efficient, and tailored deep cleaning solutions to elevate your professional space.</p>
+                <a href="contact.html" class="btn btn-primary">Request a Free Quote</a>
+            </div>
+        </section>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        <!-- Services Overview Section -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Core Services</h2>
+                    <p>Comprehensive solutions designed for your business needs.</p>
+                </div>
+                <div class="card-grid">
+                    <!-- Service Card 1 -->
+                    <div class="card">
+                        <img src="https://source.unsplash.com/random/800x600/?deep-cleaning" alt="Deep cleaning service image" class="card-img">
+                        <div class="card-body">
+                            <h3>Deep Cleaning of Facilities</h3>
+                            <p>We go beyond the surface to provide an exhaustive clean that ensures a healthy and pristine environment for your staff and clients.</p>
+                            <a href="services.html#deep-cleaning" class="read-more">Learn More →</a>
+                        </div>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="card">
+                        <img src="https://source.unsplash.com/random/800x600/?warehouse" alt="Large surface cleaning image" class="card-img">
+                        <div class="card-body">
+                            <h3>Large Surface Cleaning</h3>
+                            <p>Specialized equipment and techniques for cleaning large-scale facilities like warehouses, production halls, and parking areas.</p>
+                             <a href="services.html#large-surface" class="read-more">Learn More →</a>
+                        </div>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="card">
+                        <img src="https://source.unsplash.com/random/800x600/?checklist" alt="Custom cleaning plan image" class="card-img">
+                        <div class="card-body">
+                            <h3>Customized Cleaning Plans</h3>
+                            <p>Every business is unique. We work with you to create a cleaning schedule and service plan that fits your specific requirements and budget.</p>
+                             <a href="services.html#process" class="read-more">See Our Process →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+        <!-- Final CTA Section -->
+        <section class="cta-section">
+            <div class="container text-center">
+                <h2>Ready for a Spotless Facility?</h2>
+                <p>Let's discuss how we can meet your cleaning needs. Get your free, no-obligation quote today.</p>
+                <a href="contact.html" class="btn btn-primary">Request a Quote Now</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> MR cleaner. All Rights Reserved. | B2B Cleaning Services in Belgrade, Serbia.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
